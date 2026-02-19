@@ -1,6 +1,7 @@
 html, body {
     scroll-behavior: smooth;
-    background-color: #3498db;
+    /*background-color: #3498db;*/
+    background-color: aliceblue;
     font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -10,8 +11,13 @@ header{
     background-color: rgb(245,222,179, .5);    
     border: solid;
     border-radius: 15px;
-    border-color: #3498db;
+    border-color: #164193;
 }
+
+/*img {
+    max-width: 100%;
+    height: auto;
+}*/
 
 .onglet {
     background-color: aliceblue;
@@ -28,6 +34,7 @@ header{
 
 li {
     list-style-type: none;
+    margin-bottom: 15px;
 }
 
 .menu ul {  
@@ -52,7 +59,7 @@ li {
 
 /* CSS #PORTFOLIO */
 
-.moi{
+/*.moi{
     text-align: center;
     font-size: 20pt;
     background-color: white;
@@ -68,6 +75,30 @@ li {
     width: 150px;
     display: block;
     margin: auto;
+}*/
+
+.moi {
+    text-align: center;
+    font-size: 20pt;
+    background-color: white;
+    border: solid;
+    border-radius: 50px; 
+    margin-left: 75px;
+    margin-right: 75px;
+    margin-block: 10px 25px;
+    color: #164193;
+    padding: 10px; 
+}
+
+#photo {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%; 
+    object-fit: cover; 
+    display: block;
+    margin: auto;
+    border: 3px solid #164193;
+    object-position: 70% center;
 }
 
 section {
@@ -82,6 +113,7 @@ article {
     margin-left: 75px;
     margin-right: 75px;
     margin-block: 10px 25px;
+    display: flow-root;
 }
 
 p {
@@ -117,10 +149,13 @@ h3 u {
 
 #bash{
     width: 12%;
+    max-width: 150px;
+    height: auto;
     float: right;
     padding-left: 20px;
     padding-right: 10px;
     padding-bottom: 20px;
+    margin-bottom: 20px;
 }
 
 #python{
@@ -131,6 +166,13 @@ h3 u {
     padding-bottom: 100px;
 }
 
+/* A PROPOS DE MOI */
+
+#mistral {
+    width: 20%;
+}
+
+
 /* EXP PRO */
 
 #sncf-reseau {
@@ -138,16 +180,26 @@ h3 u {
     width: 20%;
     padding-top: 10pt;
     padding-left: 10pt;
+    margin-right: 20px;
+    margin-bottom: 15px;
 }
 
 #leclerc{
     float: left;
     width: 20%;
+    max-width: 210px;
+    height: auto;
+    margin-right: 20px;
+    margin-bottom: 15px;
 }
 
 #cordees{
     float: right;
     width: 20%;
+    max-width: 250px;
+    height: auto;
+    margin-left: 20px;
+    margin-bottom: 15px;
 }
 
 /* COMPETENCES */
@@ -202,6 +254,7 @@ h4 {
     float: left;
     padding-right: 35px;
     padding-left: 5px;
+    margin-bottom: 20px;
 }
 
 #img-fibre{
@@ -219,6 +272,21 @@ h4 {
 }
 
 /* PROJETS */
+
+#infra-sae {
+    width: 80%;
+    float: right;
+    max-width: 600px;
+    height: auto;
+    margin-right: 20px;
+    margin-bottom: 15px;
+}
+
+#alertes-splunk {
+    width: 80%;
+    max-width: 800px;
+    height: auto;
+}
 
 #rapport {
     float: left;
@@ -242,10 +310,36 @@ h4 {
 }
 /* DIVERS */
 
-#patins {
-    width: 12%;
+#hockey {
     float: right;
-    padding-right: 70px;
+    width: 175px;
+    height: 175px;
+    border-radius: 50%; 
+    object-fit: cover; 
+    display: block;
+    margin-right: 20px;
+}
+
+#hockey-2 {
+    float: right;
+    width: 175px;
+    height: 175px;
+    border-radius: 50%; 
+    object-fit: cover;
+    object-position: top; 
+    display: block;
+    margin-right: 20px;
+}
+
+#hockey-3 {
+    float: right;
+    width: 175px;
+    height: 175px;
+    border-radius: 50%; 
+    object-fit: cover;
+    object-position: top; 
+    display: block;
+    margin-right: 20px;
 }
 
 .film {
@@ -276,7 +370,7 @@ h4 {
 
 #cv {
     border: none;
-    background-color: #3498db;   
+    background-color: aliceblue;
 }
 
 #cv h2 {
@@ -304,7 +398,7 @@ h4 {
     color: green;
 }
 hr {
-    background-color: #3498db;
+    background-color: #164193;
     height: 10px;
     margin-top: 40px;
 }
